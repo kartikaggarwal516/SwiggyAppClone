@@ -1,0 +1,14 @@
+.card{
+    width: 270px;
+    height: 220px;
+    margin: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dishes{
+    display: flex;
+    flex-wrap: wrap;
+}
