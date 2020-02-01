@@ -13,7 +13,8 @@ const url = "http://food-power.glitch.me/restaurant"
 class MainComponent extends Component {
     state = {
         apiitems: [],
-        cart: {}
+        cart: {},
+        restaurantName: []
     }
 
     getUserData = (restaurantID) => {
@@ -21,8 +22,11 @@ class MainComponent extends Component {
         axios.get(`${url}/${restaurantID}`)
             .then(function (response) {
                 // handle success
-                console.log("API RESPONSE", response.data.data);
+                console.log(response.data.data);
                 self.setState({ apiitems: response.data.data.menu.items })
+                self.setState({ restaurantName: response.data.data })
+
+
             })
             .catch(function (error) {
                 // handle error
@@ -62,7 +66,7 @@ class MainComponent extends Component {
     }
 
     render() {
-        const { apiitems, cart } = this.state
+        const { apiitems, cart, restaurantName } = this.state
         console.log('resta - >', this.props, this.state)
         console.log("getdata", this.getUserData)
         return (
@@ -73,7 +77,7 @@ class MainComponent extends Component {
                         <img src={item1} width="254px" height="165px" alt="item1" />
                         <div className="Lheader">
                             <div className="LunchBox">
-                                <h1>LunchBox</h1>
+                                <h1>{restaurantName.name}</h1>
                             </div>
                         </div>
                     </div>
