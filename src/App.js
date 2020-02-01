@@ -16,19 +16,19 @@ function App() {
     <Router>
       <div>
         <Link to="/restaurants">Home</Link>
-      {/* <Home /> */}
-      {/* <MainComponent /> */}
-    </div>
-    {/* <div><Link to="/restaurant/:rid">Menu</Link></div> */}
-    <Switch>
-      <Route path="/restaurants">
         {/* <Home /> */}
-        <Home />
-      </Route>
-      <Route path="/restaurant/:abhi">
-        <MainComponent />
-      </Route>
-    </Switch>
+        {/* <MainComponent /> */}
+      </div>
+      {/* <div><Link to="/restaurant/:rid">Menu</Link></div> */}
+      <Switch>
+        <Route path="/restaurants">
+          {/* <Home /> */}
+          <Home />
+        </Route>
+        <Route path="/restaurant/:rid">
+          <MainComponent />
+        </Route>
+      </Switch>
     </Router>
   );
 }

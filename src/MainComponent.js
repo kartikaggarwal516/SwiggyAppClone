@@ -21,7 +21,7 @@ class MainComponent extends Component {
         axios.get(`${url}/${restaurantID}`)
             .then(function (response) {
                 // handle success
-                console.log(response.data.data);
+                console.log("API RESPONSE", response.data.data);
                 self.setState({ apiitems: response.data.data.menu.items })
             })
             .catch(function (error) {
@@ -56,15 +56,15 @@ class MainComponent extends Component {
     }
 
     componentDidMount() {
-        console.log("match",this.props)
+        console.log("match", this.props)
         let id = this.props.match.params.rid
         this.getUserData(id);
     }
 
     render() {
         const { apiitems, cart } = this.state
-        console.log('resta - >',this.props, this.state)
-        console.log("getdata",this.getUserData)
+        console.log('resta - >', this.props, this.state)
+        console.log("getdata", this.getUserData)
         return (
             <div>
                 <Header />
@@ -80,12 +80,12 @@ class MainComponent extends Component {
                 </div>
                 <div className="Main">
                     <div className="DishBox">
-                        <Menu items={apiitems}  />
+                        <Menu items={apiitems} />
                         {/* cart={cart} add={this.addItem} subtract={this.subtractItem} */}
                     </div>
                     <div className="CartBox">
-        <h1>Cart {Object.values(this.props.cart).reduce( (count, i) => count+i, 0 )}</h1>
-                        <Cart  />
+                        <h1>Cart {Object.values(this.props.cart).reduce((count, i) => count + i, 0)}</h1>
+                        <Cart />
                     </div>
                 </div>
             </div>
@@ -96,8 +96,8 @@ class MainComponent extends Component {
 
 const mapStateToProps = (store) => {
     return {
-        cart : store.cart
+        cart: store.cart
     }
 }
 
-export default withRouter(connect(mapStateToProps,null)(MainComponent))
+export default withRouter(connect(mapStateToProps, null)(MainComponent))
