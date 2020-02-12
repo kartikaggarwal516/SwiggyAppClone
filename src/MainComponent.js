@@ -8,7 +8,7 @@ import Cart from './Cart'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 
-const url = "http://food-power.glitch.me/restaurant"
+const url = "https://food-power.glitch.me/restaurant"
 
 class MainComponent extends Component {
     state = {

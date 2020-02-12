@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Home'
 import MainComponent from './MainComponent';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -13,7 +13,7 @@ import Restaurants from './Restaurants';
 
 function App() {
   return (
-    <Router>
+    <Router basename="SwiggyAppClone">
       <div>
         {/* <Link to="/restaurants">Home</Link> */}
       {/* <Home /> */}
