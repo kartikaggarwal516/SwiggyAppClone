@@ -13,7 +13,8 @@ const url = "http://food-power.glitch.me/restaurant"
 class MainComponent extends Component {
     state = {
         apiitems: [],
-        cart: {}
+        cart: {},
+        restaurant: []
     }
 
     getUserData = (restaurantID) => {
@@ -21,8 +22,11 @@ class MainComponent extends Component {
         axios.get(`${url}/${restaurantID}`)
             .then(function (response) {
                 // handle success
-                console.log(response.data.data);
-                self.setState({ apiitems: response.data.data.menu.items })
+                console.log("response",response);
+                self.setState({ 
+                    apiitems: response.data.data.menu.items,
+                    restaurant: response.data.data
+                })
             })
             .catch(function (error) {
                 // handle error
@@ -57,12 +61,12 @@ class MainComponent extends Component {
 
     componentDidMount() {
         console.log("match",this.props)
-        let id = this.props.match.params.rid
+        let id = this.props.match.params.rid  //here we are fetvhing the value of restaurant id that we have passed from restaurants.js through match.params which is provided by withrouter
         this.getUserData(id);
     }
 
     render() {
-        const { apiitems, cart } = this.state
+        const { apiitems, restaurant } = this.state
         console.log('resta - >',this.props, this.state)
         console.log("getdata",this.getUserData)
         return (
@@ -70,10 +74,10 @@ class MainComponent extends Component {
                 <Header />
                 <div className="LunchBox-header">
                     <div className="fix1">
-                        <img src={item1} width="254px" height="165px" alt="item1" />
+                        <img src={restaurant.imageURL || `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${restaurant.cloudinaryImageId}`} width="254px" height="165px" alt="item1" />
                         <div className="Lheader">
                             <div className="LunchBox">
-                                <h1>LunchBox</h1>
+                                <h1>{restaurant.name}</h1>
                             </div>
                         </div>
                     </div>

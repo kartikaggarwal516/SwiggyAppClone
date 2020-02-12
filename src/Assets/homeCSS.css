@@ -234,7 +234,6 @@ align-items: center;
 .content1{
     margin-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px dashed #bebfc5;
 }
 .cheading{
     font-size: 28px;
@@ -248,10 +247,11 @@ align-items: center;
     margin-top: 15px;
     background-color: #fff;
 }
-.card{
+.homecard{
     width: 270px;
-    height: 390px;
+    height: 305px;
     margin: 15px;
+    margin-bottom: 110px;
     padding: 8px;
     box-sizing: border-box;
     display: flex;

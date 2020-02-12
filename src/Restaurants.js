@@ -10,7 +10,7 @@ import {
     Link
   } from "react-router-dom";
 
-const url1 = "http://food-power.glitch.me/restaurants"
+const url1 = "https://food-power.glitch.me/restaurants/"
 
 class Restaurants extends Component {
     state = {
@@ -43,12 +43,12 @@ class Restaurants extends Component {
         const {restaurants}= this.state
         return (
             <div className="crestra">
-                {Object.entries(restaurants).map(([k, v]) => {
-                    return (<Link to={`/restaurant/${v.id}`}>
-                        <div className="card" key={k}>
-                        <img src={v.imageURL || `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${v.cloudinaryImageId}`} alt="swiggy order" width="254px" height="160px" />
+                {Object.entries(restaurants).map(([k, v]) => { //here in the next line we are passing the rid(its variable which we have declared in App.js) to the maincomponent page and will fetch there
+                     return (<Link to={`/restaurant/${v.id}`}>  
+                        <div className="homecard" key={k}>
+                        <img src={v.imageURL || `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${v.cloudinaryImageId}`} alt="swiggy order" width="254px" />
                         <div className="cardcontent">
-                            <div className="cardname">{v.name}</div>
+                             <div className="cardname">{v.name}</div>
                             <div className="cardinfo">
                                 North Indian, Desserts, Biryani
                                     </div>

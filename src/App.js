@@ -15,17 +15,16 @@ function App() {
   return (
     <Router>
       <div>
-        <Link to="/restaurants">Home</Link>
+        {/* <Link to="/restaurants">Home</Link> */}
       {/* <Home /> */}
       {/* <MainComponent /> */}
     </div>
     {/* <div><Link to="/restaurant/:rid">Menu</Link></div> */}
     <Switch>
-      <Route path="/restaurants">
-        {/* <Home /> */}
+      <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/restaurant/:abhi">
+      <Route path="/restaurant/:rid">
         <MainComponent />
       </Route>
     </Switch>

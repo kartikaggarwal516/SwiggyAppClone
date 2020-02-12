@@ -31,6 +31,8 @@ export default function cartReducers(state = defaultState, action){
             // return state + 1
         }
         case DECREMENT_ITEM: {
+       
+       
             console.log("Decrement Reducer", state)
             const newState = {
                 ...state,
