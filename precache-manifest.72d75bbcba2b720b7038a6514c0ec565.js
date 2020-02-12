@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33806c5e418c88a46e5880fd89be8ee8",
+    "revision": "432aa6995b84f49fe98ee5cee75f002e",
     "url": "/SwiggyAppClone/index.html"
   },
   {
-    "revision": "fc371ea3153cc926749b",
+    "revision": "a733b117ffbd3b5aedcc",
     "url": "/SwiggyAppClone/static/css/main.51096e34.chunk.css"
   },
   {
-    "revision": "8d71646b0cdba3f65fa9",
-    "url": "/SwiggyAppClone/static/js/2.65dc7e05.chunk.js"
+    "revision": "fa8ce3b523261de016ac",
+    "url": "/SwiggyAppClone/static/js/2.bcfe98f9.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/SwiggyAppClone/static/js/2.65dc7e05.chunk.js.LICENSE"
+    "url": "/SwiggyAppClone/static/js/2.bcfe98f9.chunk.js.LICENSE"
   },
   {
-    "revision": "fc371ea3153cc926749b",
-    "url": "/SwiggyAppClone/static/js/main.1102fae1.chunk.js"
+    "revision": "a733b117ffbd3b5aedcc",
+    "url": "/SwiggyAppClone/static/js/main.f4afe5d9.chunk.js"
   },
   {
     "revision": "d9cfa2800946d4ad93bd",
