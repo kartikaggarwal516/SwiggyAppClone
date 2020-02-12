@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SwiggyAppClone/static/css/main.51096e34.chunk.css",
-    "main.js": "/SwiggyAppClone/static/js/main.fa77f5a7.chunk.js",
-    "main.js.map": "/SwiggyAppClone/static/js/main.fa77f5a7.chunk.js.map",
+    "main.js": "/SwiggyAppClone/static/js/main.1102fae1.chunk.js",
+    "main.js.map": "/SwiggyAppClone/static/js/main.1102fae1.chunk.js.map",
     "runtime-main.js": "/SwiggyAppClone/static/js/runtime-main.a0330ecc.js",
     "runtime-main.js.map": "/SwiggyAppClone/static/js/runtime-main.a0330ecc.js.map",
     "static/js/2.65dc7e05.chunk.js": "/SwiggyAppClone/static/js/2.65dc7e05.chunk.js",
     "static/js/2.65dc7e05.chunk.js.map": "/SwiggyAppClone/static/js/2.65dc7e05.chunk.js.map",
     "index.html": "/SwiggyAppClone/index.html",
-    "precache-manifest.2d0e09cd9d96ccf3a372da30e4b25b44.js": "/SwiggyAppClone/precache-manifest.2d0e09cd9d96ccf3a372da30e4b25b44.js",
+    "precache-manifest.6316e9faf4a803bcae67c4aefeb88841.js": "/SwiggyAppClone/precache-manifest.6316e9faf4a803bcae67c4aefeb88841.js",
     "service-worker.js": "/SwiggyAppClone/service-worker.js",
     "static/css/main.51096e34.chunk.css.map": "/SwiggyAppClone/static/css/main.51096e34.chunk.css.map",
     "static/js/2.65dc7e05.chunk.js.LICENSE": "/SwiggyAppClone/static/js/2.65dc7e05.chunk.js.LICENSE",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.a0330ecc.js",
     "static/js/2.65dc7e05.chunk.js",
     "static/css/main.51096e34.chunk.css",
-    "static/js/main.fa77f5a7.chunk.js"
+    "static/js/main.1102fae1.chunk.js"
   ]
 }

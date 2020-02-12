@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SwiggyAppClone/precache-manifest.2d0e09cd9d96ccf3a372da30e4b25b44.js"
+  "/SwiggyAppClone/precache-manifest.6316e9faf4a803bcae67c4aefeb88841.js"
 );
 
 self.addEventListener('message', (event) => {
