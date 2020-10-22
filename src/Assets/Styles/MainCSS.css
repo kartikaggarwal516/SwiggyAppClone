@@ -1,7 +1,10 @@
 .LunchBox-header{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     margin-top: 80px;
-    height: 250px;
+    height: 35vh;
     position: relative;
     position: sticky;
     top: 0px;
@@ -14,8 +17,8 @@
 }
 
 .fix1{
-    width: 80%;
-    height: 220px;
+    width: 80vw;
+    height: 30vh;
     position: absolute;
     background-color: #171a29;
     /* background-color:red; */

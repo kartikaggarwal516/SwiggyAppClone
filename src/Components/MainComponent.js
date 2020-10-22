@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Header from './Header'
-import './Assets/MainCSS.css'
-import item1 from "./Assets/Images/Lunchboxheader.jpeg"
+import '../Assets/Styles/MainCSS.css'
+import item1 from "../Assets/Images/Lunchboxheader.jpeg"
 import Menu from './Menu'
 import Cart from './Cart'
 import { connect } from 'react-redux'
@@ -61,7 +61,7 @@ class MainComponent extends Component {
 
     componentDidMount() {
         console.log("match",this.props)
-        let id = this.props.match.params.rid  //here we are fetvhing the value of restaurant id that we have passed from restaurants.js through match.params which is provided by withrouter
+        let id = this.props.match.params.rid  //here we are fetching the value of restaurant id that we have passed from restaurants.js through match.params which is provided by withrouter
         this.getUserData(id);
     }
 

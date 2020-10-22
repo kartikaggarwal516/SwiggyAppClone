@@ -1,17 +1,18 @@
 import React from 'react'
-import './Assets/homeCSS.css'
-import SwiggyLogo from "./Assets/SVG/SwiggyLogo"
-import Search from "./Assets/SVG/Search"
-import Offers from "./Assets/SVG/Offers"
-import Help from "./Assets/SVG/Help"
-import SignIn from "./Assets/SVG/SignIn"
-import Cart from "./Assets/SVG/Cart"
+import '../Assets/Styles/homeCSS.css'
+import SwiggyLogo from "../Assets/SVG/SwiggyLogo"
+import Search from "../Assets/SVG/Search"
+import Offers from "../Assets/SVG/Offers"
+import Help from "../Assets/SVG/Help"
+import SignIn from "../Assets/SVG/SignIn"
+import Cart from "../Assets/SVG/Cart"
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return <div className="Header">
                     <div className='TopBar'>
                         <div>
-                            <SwiggyLogo />
+                            <Link to="/"><SwiggyLogo /></Link>
                         </div>
                         <div className="location">
                             <span>Whitefield</span>

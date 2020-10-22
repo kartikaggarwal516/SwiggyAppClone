@@ -1,10 +1,10 @@
 import React from 'react'
-import card from "./Assets/Images/BhelPuri.jpg"
-import './Assets/MenuCSS.css'
+import card from "../Assets/Images/BhelPuri.jpg"
+import '../Assets/Styles/MenuCSS.css'
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
-import  {addItem} from './reducers/CartReducers'
-import  {subtractItem} from './reducers/CartReducers'
+import  {addItem} from '../Actions/Actions'
+import  {subtractItem} from '../Actions/Actions'
 
 const Menu = (props) => {
     console.log('Menu', props)

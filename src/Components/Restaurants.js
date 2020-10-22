@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import './Assets/homeCSS.css'
-import card from "./Assets/Images/card.jpeg"
-import MainComponent from './MainComponent';
+import '../Assets/Styles/homeCSS.css'
+import card from "../Assets/Images/card.jpeg"
 import {
     BrowserRouter as Router,
     Switch,
@@ -57,7 +56,7 @@ class Restaurants extends Component {
                             <div className="rating">
                                 <span className="star">
                                     ★
-                                                </span>
+                                </span>
                                 <span>4.5</span>
                             </div>
                             <div>•</div>

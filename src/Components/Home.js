@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-import item1 from "./Assets/Images/home-header1.jpeg"
-import item2 from "./Assets/Images/home-header2.jpeg"
-import item3 from "./Assets/Images/home-header3.jpeg"
-import item4 from "./Assets/Images/home-header4.jpeg"
-import sticky1 from "./Assets/Images/Sticky1.PNG"
-import slogo from "./Assets/Images/SuperNewLogo.png"
-import nav1 from "./Assets/Images/nav1.png"
-import nav2 from "./Assets/Images/nav2.png"
-import nav3 from "./Assets/Images/nav3.png"
-import nav4 from "./Assets/Images/nav4.png"
-import nav5 from "./Assets/Images/nav5.png"
-import nav6 from "./Assets/Images/nav6.png"
-import card from "./Assets/Images/card.jpeg"
-import './Assets/homeCSS.css'
+import item1 from "../Assets/Images/home-header1.jpeg"
+import item2 from "../Assets/Images/home-header2.jpeg"
+import item3 from "../Assets/Images/home-header3.jpeg"
+import item4 from "../Assets/Images/home-header4.jpeg"
+import sticky1 from "../Assets/Images/Sticky1.PNG"
+import slogo from "../Assets/Images/SuperNewLogo.png"
+import nav1 from "../Assets/Images/nav1.png"
+import nav2 from "../Assets/Images/nav2.png"
+import nav3 from "../Assets/Images/nav3.png"
+import nav4 from "../Assets/Images/nav4.png"
+import nav5 from "../Assets/Images/nav5.png"
+import nav6 from "../Assets/Images/nav6.png"
+import card from "../Assets/Images/card.jpeg"
+import '../Assets/Styles/homeCSS.css'
 import Header from './Header'
 import axios from 'axios'
 import Restaurants from './Restaurants'
@@ -24,13 +24,12 @@ class Home extends Component {
 
     }
 
-    getUserData = () => {
-        const self = this
+    getRestaurantData = () => {        
         axios.get(url)
-            .then(function (response) {
+            .then((response) => {
                 // handle success
                 console.log(response);
-                self.setState({ apiitems: response.data })
+                this.setState({ apiitems: response.data })
             })
             .catch(function (error) {
                 // handle error
@@ -42,7 +41,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        this.getUserData();
+        this.getRestaurantData();
     }
 
     render() {
