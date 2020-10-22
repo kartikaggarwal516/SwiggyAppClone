@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "701b4e69d493e0cd65eb178ee4440edd",
+    "revision": "412727d9395b45e3daac1fbf9802cc64",
     "url": "/SwiggyAppClone/index.html"
   },
   {
-    "revision": "5d27858ecd60ff254489",
-    "url": "/SwiggyAppClone/static/css/main.51096e34.chunk.css"
+    "revision": "b290c7bd6ce16f7908d3",
+    "url": "/SwiggyAppClone/static/css/main.d3b8ba65.chunk.css"
   },
   {
-    "revision": "7eb204f7d34331d73be9",
-    "url": "/SwiggyAppClone/static/js/2.8bfd0428.chunk.js"
+    "revision": "caff14c38b17befcdadf",
+    "url": "/SwiggyAppClone/static/js/2.cebff304.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/SwiggyAppClone/static/js/2.8bfd0428.chunk.js.LICENSE"
+    "url": "/SwiggyAppClone/static/js/2.cebff304.chunk.js.LICENSE"
   },
   {
-    "revision": "5d27858ecd60ff254489",
-    "url": "/SwiggyAppClone/static/js/main.3e5937fc.chunk.js"
+    "revision": "b290c7bd6ce16f7908d3",
+    "url": "/SwiggyAppClone/static/js/main.9b57b428.chunk.js"
   },
   {
     "revision": "d9cfa2800946d4ad93bd",
@@ -54,9 +54,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e478811500198f298a0682b3364a5e9e",
     "url": "/SwiggyAppClone/static/media/home-header4.e4788115.jpeg"
-  },
-  {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/SwiggyAppClone/static/media/logo.5d5d9eef.svg"
   }
 ]);
